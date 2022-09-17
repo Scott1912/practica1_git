@@ -3,6 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
+    <style>
+        th,td{
+            border: 2px solid;
+        }
+    </style>
 </head>
 <body>
     <h1> Desarrollo Web</h1>
@@ -197,17 +202,125 @@
 
     <h3>Tablas</h3>
     <p>
-        Una tabla es un conjunto estructurado de datos distribuidos en filas y columnas.<br>
-        Una tabla básica puede ser declarada usando tres elementos, a saber, table (el contenedor principal), tr (representando a las filas ) y td (representando a las columnas).<br>
+        Una tabla es un conjunto estructurado de datos distribuidos en filas y columnas.Una tabla básica puede ser declarada usando tres elementos, a saber, table (el contenedor principal), tr (representando a las filas ) y td (representando a las columnas).
+    </p>
+    <p>
+        Ejemplo de una tabla sencilla en HTML es el siguietnte: 
+    </p>
+    <pre>
+        &lt table &gt
+            &lt thead &gt
+                &lt tr &gt
+                    &lt th &gt.........&lt /th &gt
+                    &lt th &gt.........&lt /th &gt
+                &lt /tr &gt
+            &lt /thead &gt
+            &lt tbody &gt
+                &lt tr &gt
+                    &lt td &gt.......&lt /td &gt
+                    &lt td &gt.......&lt /td &gt
+                &lt /tr &gt
+            &lt /tbody &gt
+            &lt tfoot &gt
+            &lt tr &gt
+                    &lt td &gt........&lt /td &gt
+                    &lt td &gt........&lt /td &gt
+                &lt /tr &gt
+            &lt /tfoot &gt
+        &lt /table &gt
+    </pre>
+    <p>
+        Donde <b>&lt table &gt</b> nos ayudará a construir la tabla, <b> &lt thead &gt</b> la cabeza o encabezado de nuestra tabla, <b>&lt tr &gt</b> nuestras filas del encabezado, <b>&lt th &gt</b> nuestro encabezado,
+        <b>&lt tbody &gt</b> el cuerpo de nuestra tabla (el cuerpo que estará entre el encabezado y el pie de la tabla), <b>&lt tr &gt</b> las filas del cuerpo de la tabla, <b>&lt td &gt</b> nuestras celdas del cuerpo o las columnas de cada fila,
+        <b>&lt tfoot &gt</b> el pie de la tabla, serán nuestra última fila de la tabla. Veamos un ejemplo:
 
     </p>
 
+    <table>
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th> Tipo/Especie </th>
+                <th> Elementos </th>
+                <th> Débilidad </th>
+                <th> Hostilidad </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Tetranadon</td>
+                <td>Anfibio</td>
+                <td>Agua</td>
+                <td>Desconocido</td>
+                <td rowspan="7"> 5 estrellas</td>
+            </tr>
+            <tr>
+                <td>Zamtrios</td>
+                <td>Anfibio</td>
+                <td>Hielo y Agua</td>
+                <td>Rayo y Fuego</td>
+            </tr>
+            <tr>
+                <td>Congalala</td>
+                <td>Bestia de colmillos</td>
+                <td>Fuego (nitro seta)</td>
+                <td>Fuego</td>
+            </tr>
+            <tr>
+                <td>Rajang</td>
+                <td>Bestia de colmillos</td>
+                <td>Rayo</td>
+                <td>Hielo</td>
+            </tr>
+            <tr>
+                <td>Tigrex</td>
+                <td>Wyvern volador</td>
+                <td>Fuego, Agua, Nieve</td>
+                <td>Rayo, Dragón </td>
+            </tr>
+            <tr>
+                <td>Nargacuga</td>
+                <td>Wyvern volador</td>
+                <td>Ninguno</td>
+                <td>Rayo, Fuego </td>
+            </tr>
+            
+        </tbody>
+    </table>
 
+    <h2> Multimedia </h2>
+    <h3>Imágenes</h3>
+    <p>
+        Para insertar imágenes dentro d enuestra página, usaremos la etiqueta &lt video src="dirección del vídeo" &gt.
+        Esta etiqueta no necesita etiqueta de cierre
 
+    </p>
+    <img src="img/El_hijo_de_Dios_NL.png" alt="El hijo de Dios Novela">
 
+    <h3> Vídeo </h3>
+    <p> 
+        Para insertar vídeos dentro d enuestra página, usaremos la etiqueta &lt video src="dirección del vídeo" &gt.    
+    </p>
+    <video src="video/Solo Leveling _ TRAILER OFFICIEL.mp4" controls="True" width="700" poster="img/solo_leveling_poster.jpg"></video>
 
+    <h3> Audio </h3>
+    <p> 
+        Para insertar vídeos dentro de nuestra página, usaremos la etiqueta &lt video src="dirección del vídeo" &gt.
+    </p>
+    <audio src="audio/Fairy Tail  Erza Scarlet  Theme.mp3" controls="True"></audio>
 
-
+    <p>
+        En en vídeo e imagen, podemos ajustar el tamaño con el que deseamos que aparezca, solo debemos incluir dentro de la etiqueta width="Tamaño" en "Tamaño", especificaremos el ancho.
+        para video seria <b> &lt video src"dirección/ruta del archivo" width="700" &gt </b> para imágenes: <b>&lt img src"dirección/ruta del archivo" width="700" &gt </b>. En esté caso, decidimos poner un ancho de 700 <br>
+        Otras formas de poner un vídeo son las siguientes:
+    </p>
+    <pre>
+        &lt video width="700" &gt
+            &lt source src="dirección/ruta" &gt
+            &lt source src="dirección/ruta" &gt
+        &lt img src="dirección/ruta" &gt
+        &lt /video &gt
+    </pre>
 
 
 
